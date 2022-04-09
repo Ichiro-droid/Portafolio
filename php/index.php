@@ -1,12 +1,14 @@
-<?php 
-	$nombre = $_POST['name'];
-	$asunto = $_POST['subject'];
-	$mensaje = $_POST['message'];
+<?php
 
-	echo $nombre. "ha dicho <br/>".$mensaje;
-	if(mail('Ka8959342@gmail.com', $asunto, $mensaje)){
-		echo "mail enviado";
-	}else{
-		echo "Error";
-	}
- ?>
+$destino = "ka8959342@gmail.com";
+//Esto es al correo que se enviarÃ¡ el mensaje
+
+$nombre = $_POST['name']; 
+$email = $_POST['email'];
+$asunto = $_POST['subject'];
+$mensaje = $_POST['body'];
+
+$header = "Enviado desde formulario de contacto en localhost";
+$mensajeCompleto = "\n Nombre: " . $nombre . "\n" . "Mensaje :" . $mensaje;
+mail($destino, $asunto, $mensajeCompleto, $header);
+header('Location: index.html');
