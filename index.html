@@ -558,13 +558,13 @@
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form method="post" id="myForm" action="/php/index.php">
+                 <form method="post" action="contacto.php">
                     <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                        <input  name="name" id="name" type="text" placeholder="Name" class="input-name" required>
+                        <input name="email" id="email" type="email" placeholder="Email"  class="input-name" required>
                     </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
+                    <input type="text" name="subject" id="subject" placeholder="subject" class="input-subject" required>
+                    <textarea name ="body" id="messages" class="input-textarea" placeholder="message" required></textarea >
                     <button type="button" id ="submit" value="send">Submit</button>
                  </form>
                
@@ -612,7 +612,7 @@
                     <!--copyright-section You Can Remove After Downloading-->
                     <div class="footer">
                         <div class="footer-text">
-                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px">  Álvarez
+                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Kevin Álvarez
                         </div>
                        </div>
                <!--copyright-section-->
