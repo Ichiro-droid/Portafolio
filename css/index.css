@@ -1289,6 +1289,9 @@ form button:hover{
     height: 100%;
     width: 100%;
 }
+.color-orange{
+    background: #dd7631;
+}
 .color-red{
     background: #c70039;
 }
@@ -1304,9 +1307,7 @@ form button:hover{
 .color-malt{
     background: #00909e;
 }
-.color-orange{
-    background: #dd7631;
-}
+
 @keyframes rotate{
     0%{
    transform: rotate(0deg);
