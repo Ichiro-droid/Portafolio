@@ -12,3 +12,5 @@ $header = "Enviado desde formulario de contacto en localhost";
 $mensajeCompleto = "\n Nombre: " . $nombre . "\n" . "Mensaje :" . $mensaje;
 mail($destino, $asunto, $mensajeCompleto, $header);
 header('Location: index.html');
+
+?>
