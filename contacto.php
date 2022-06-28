@@ -4,19 +4,18 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $asunto = $_POST['subject'];
-$mensaje = $_POST['menmessagesaje'];
+$mensaje = $_POST['message'];
 
 // Datos para el correo
-$destinatario = "codytron.info@gmail.com";
-$asunto = "Contacto desde nuestra web";
+$destinatario = "Ka8959342@gmail.com";
+$asunto1 = "Contacto desde nuestra web";
 
-$carta = "De: $nombre \n";
-$carta .= "Correo: $correo \n";
-$carta .= "Telefono: $telefono \n";
+$carta = "De: $name \n";
+$carta .= "Correo: $email \n";
+$carta .= "Asunto: $asunto \n";
 $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
-mail($destinatario, $asunto, $carta);
-header('Location:mensaje-de-envio.html');
+mail($destinatario, $asunto1, $carta);
 
 ?>
