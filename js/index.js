@@ -346,7 +346,8 @@ anime({
 
 $(document).ready(function(){
 
-  alert('funciono');
-
+  $('#submit').click(function(){
+alert('funciono');
+  });
 
 });
