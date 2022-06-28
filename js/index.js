@@ -323,7 +323,7 @@ window.addEventListener('load', function(){
   icon.addEventListener('click', showNav);
 });
 
-// 404 error
+// 404 Error
 anime({
   targets: '.row svg',
   translateY: 10,
