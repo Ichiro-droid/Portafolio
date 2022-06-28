@@ -13,7 +13,7 @@ $asunto1 = "Contacto desde nuestra web";
 $carta = "De: $name \n";
 $carta .= "Correo: $email \n";
 $carta .= "Asunto: $asunto \n";
-$carta .= "Mensaje: $menssaje";
+$carta .= "Mensaje: $message";
 
 // Enviando Mensaje
 if(mail($destinatario, $asunto1, $carta)){
