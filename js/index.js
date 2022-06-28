@@ -344,10 +344,3 @@ anime({
     rotateY: {value: '+=180', delay: 200},
 });
 
-$(document).ready(function(){
-
-  $('#submit').click(function(){
-alert('funciono');
-  });
-
-});
