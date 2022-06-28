@@ -2711,7 +2711,7 @@ for tabs and large phones
   
   @media (max-width: 750px) {
     .hero__terminal {
-      width: 70%;
+      width: 80%;
     }
     .tab__container > ul {
       right: auto;
