@@ -16,11 +16,9 @@ $carta .= "Asunto: $asunto \n";
 $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
-mail($destinatario, $asunto1, $carta)
-header('Location:index.html')
-/*if(mail($destinatario, $asunto1, $carta)){
+if(mail($destinatario, $asunto1, $carta)){
 	echo "mail enviado";
 }else{
 	echo "uyuyuyuyuy";
-}*/
+}
 ?>
