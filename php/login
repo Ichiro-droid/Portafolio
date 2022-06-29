@@ -13,14 +13,8 @@ $nr 		= mysqli_num_rows($queryusuario);
 	
 if ($nr == 1 )  
 	{ 
-		if($rol=="Usuario")
-			{	
-				header("Location: index.html");
-			}
-		else if ($rol=="Admin")
-			{
-				header("Location: pag_admin.php");
-			}
+			
+	   header("Location: index.html");
 	}
 else
 	{
