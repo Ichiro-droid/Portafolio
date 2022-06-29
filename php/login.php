@@ -15,16 +15,16 @@ if ($nr == 1 )
 	{ 
 		if($rol=="Usuario")
 			{	
-				header("Location: ./index.html");
+				header("Location: index.html");
 			}
 		else if ($rol=="Admin")
 			{
-				header("Location: pag_admin.php");
+				header("Location: 404.html");
 			}
 	}
 else
 	{
-	echo "<script> alert('Usuario, contraseña o rol incorrecto.');window.location= './index.html' </script>";
+	echo "<script> alert('Usuario, contraseña o rol incorrecto.');window.location= '404.html' </script>";
 	}
 
 /*VaidrollTeam*/
