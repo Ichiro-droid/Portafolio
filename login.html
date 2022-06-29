@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>CodePen - Elegant Login Form with ParticlesJS (with form validation and show/hide password)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css'>
@@ -10,62 +10,30 @@
 
 </head>
 <body>
-
-  <div class="color-changer">
-    <div class="color-panel">
-        <img src="images/gear.png" alt="">
-    </div>
-    <div class="color-selector">
-        <div class="heading">Custom Colors</div>
-        <div class="colors">
-            <ul >
-            <li>
-                <a href="#0" class="color-red " title="color-red"></a>
-            </li>
-            <li>
-                <a href="#0" class="color-purple" title="color-purple"></a>
-            </li>
-            <li>
-                <a href="#0" class="color-malt" title="color-malt"></a>
-            </li>
-            <li>
-                <a href="#0" class="color-green" title="color-green"></a>
-            </li>
-            <li>
-                <a href="#0" class="color-blue" title="color-blue"></a>
-            </li>
-            <li>
-                <a href="#0" class="color-orange" title="color-orange"></a>
-            </li>
-            </ul>
-        </div>
-    </div>
-    </div>
-
 <!-- partial:index.partial.html -->
 <body id="particles-js"></body>
 <div class="animated bounceInDown">
   <div class="container">
     <span class="error animated tada" id="msg"></span>
-    <form action="./php/login.php"  method="post" name="form1" class="box" onsubmit="return checkStuff()">
+    <form method="post" action="./php/login.php" name="form1" class="box" onsubmit="return checkStuff()">
       <h4>Login<span> Users</span></h4>
       <h5>Sign in to your account.</h5>
-        <input type="text" name="email" placeholder="Email" autocomplete="off">
+        <input type="text" name="email" placeholder="Email" autocomplete="off" required>
         <i class="typcn typcn-eye" id="eye"></i>
-        <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
-        <label>
-          <input type="checkbox">
-          <span></span>
-          <small class="rmb">Remember me</small>
-        </label>
+        <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off" required>
+        <div id="rol">Rol</div>
+        <select name="rol">
+          <option value="0" style="display:none;"><label>Seleccionar</label></option>
+          <option value="Usuario">Usuario</option>
+          <option value="Admin">Administrador</option>
+          </select>
         <a href="#" class="forgetpass">Forget Password?</a>
         <input type="submit" value="Sign in" class="btn1">
       </form>
-        <a href="Registro.html" class="dnthave">Don’t have an account? Sign up</a>
+        <a href="#" class="dnthave">Don’t have an account? Sign up</a>
   </div> 
        <div class="footer">
         <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Kevin Álvarez
-      
     </div>
 </div>
 <!-- partial -->
