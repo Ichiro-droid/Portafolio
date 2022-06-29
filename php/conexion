@@ -1,8 +1,11 @@
 <?php
-$conn = new mysqli("localhost","id19186562_max","@Kevin26102003","id19186562_web");
-	
-	if($conn->connect_errno)
-	{
-		echo "No hay conexión: (" . $conn->connect_errno . ") " . $conn->connect_error;
-	}
+$server = 'localhost';
+$username = 'id9956891_analisis';
+$password = '***';
+$database = 'id9956891_examen';
+try {
+  $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+} catch (PDOException $e) {
+  die('Conexión fracasada: ' . $e->getMessage());
+}
 ?>

@@ -20,5 +20,5 @@ if(mail($destinatario, $asunto1, $carta)){
 	echo "mail enviado";
 }else{
 	echo "uyuyuyuyuy";
-?>
 }
+?>

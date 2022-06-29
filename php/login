@@ -1,6 +1,6 @@
 <?php
 
- include('./conexion.php');
+ include('conexion.php');
 
 $usu 	= $_POST["Name"];
 $pass 	= $_POST["Email"];
@@ -8,7 +8,7 @@ $pass 	= $_POST["Email"];
 
 
 
-$queryusuario = mysqli_query($conn,"SELECT * FROM login WHERE usuario ='$usu' and pass = '$pass'");
+$queryusuario = mysqli_query($conn,"SELECT * FROM login WHERE Email ='$usu' and pass = '$pass'");
 $nr 		= mysqli_num_rows($queryusuario);  
 	
 if ($nr == 1 )  
