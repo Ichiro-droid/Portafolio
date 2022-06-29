@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost","id19186562_web","","@Kevin26102003");
+$conn = new mysqli("localhost","id19186562_max","@Kevin26102003","id19186562_web");
 	
 	if($conn->connect_errno)
 	{
